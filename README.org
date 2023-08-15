@@ -1,0 +1,42 @@
+#+title: Keybindings Reference
+
+|----------------------------------------------------+---------------+------------+---------------------------------+--------------------------|
+| Task                                               | Vanilla Emacs | Vim/NeoVim | Helix                           | VSCode                   |
+|----------------------------------------------------+---------------+------------+---------------------------------+--------------------------|
+| Go left                                            | ~C-b~           | ~h~          | ~h~                               | ←                        |
+| Go down                                            | ~C-n~           | ~j~          | ~j~                               | ↓                        |
+| Go right                                           | ~C-f~           | ~l~          | ~l~                               | →                        |
+| Go up                                              | ~C-p~           | ~k~          | ~k~                               | ↑                        |
+| Go the end of the line                             | ~C-e~           | ~$~          | ~g l~                             | ~End~                      |
+| Go the beginning of the line                       | ~C-a~           | ~0~          | ~g h~                             | ~Home~                     |
+| Go to the previous function                        | ~M-2 C-M-a~     |            | ~[ f~                             |                          |
+| Go to the next function                            | ~M-2 C-M-e~     |            | ~] f~                             |                          |
+| Go to the matching bracket                         | ?             | ~%~          | ~m m~                             |                          |
+| Highlight the entire buffer (might not be optimal) | ~C-< C-SPC C->~ | ~g g v G~    | ~%~                               | ~Ctrl+A~                   |
+| Delete until the end of the line                   | ~C-k~           | ~D~          | ~t RET d~ or ~<C-k>~ in insert mode |                          |
+| Remove line                                        | ~C-a C-k~       | ~d d~        | ~x d~                             | triple click + ~backspace~ |
+| Remove character                                   | ~C-d~           | ~x~          | ~d~                               | ~Delete~                   |
+| Highlight paragraph                                | ~M-h~           | ~{ v }~      | ~m a p~                           |                          |
+| Change word                                        | ~M-d~           | ~c w~        | ~w c~                             | double click             |
+| Highlight function                                 | ~C-M-h~         |            | ~m i f~ or ~m a f~                  |                          |
+|----------------------------------------------------+---------------+------------+---------------------------------+--------------------------|
+
+* Editors
+- These are all editors with the default configuration, and no extra
+  plugins.
+- The notation is according to how they annotate it, i.e. Alt+A in CUA
+  would be ~M-a~ in Emacs, ~<M-a>~ in Vim, and ~<A-a>~ in Helix.
+- Nano, Vi, Notepad, etc are not included
+** Emacs
+- These are emacs keybindings _without_ any vi overlay like viper, meow,
+  or evil.
+** Vim/Neovim
+- A lot of the semantic features are missing, so they're simply left
+  blank. These features can be provided through plugins
+** Helix
+- Helix is a fresh editor, so these keys might not reflect the latest changes
+* FAQ
+** Why?
+My brain is too slow to switch between text editors, so I decided to
+document the differences.
+
